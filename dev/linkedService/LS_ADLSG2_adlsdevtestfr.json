@@ -1,0 +1,18 @@
+{
+	"name": "LS_ADLSG2_adlsdevtestfr",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlsdevtestfr.dfs.core.windows.net/",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault_ADLS",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "ADLSackey"
+			}
+		}
+	}
+}
