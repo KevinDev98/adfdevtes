@@ -1,0 +1,42 @@
+{
+	"name": "ETL_1",
+	"properties": {
+		"activities": [
+			{
+				"name": "APIconsumption",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "2.12:00:00",
+					"retry": 1,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://api.mockaroo.com/api/36866080?count=1000&key=aa2b5ae0",
+					"method": "GET",
+					"httpRequestTimeout": "00:10:00"
+				}
+			},
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"enableStaging": false
+				}
+			}
+		],
+		"annotations": []
+	}
+}
