@@ -1,0 +1,61 @@
+{
+	"name": "DataSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLSG2_adlsdevtestfr",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "InfoAirportCSV.csv",
+				"folderPath": "adfdev_airport",
+				"fileSystem": "inputfiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "AirportCode",
+				"type": "String"
+			},
+			{
+				"name": "AirportName",
+				"type": "String"
+			},
+			{
+				"name": "AirportContinent",
+				"type": "String"
+			},
+			{
+				"name": "AirportCountryCode",
+				"type": "String"
+			},
+			{
+				"name": "AirportMunicip",
+				"type": "String"
+			},
+			{
+				"name": "AirportRegionCode",
+				"type": "String"
+			},
+			{
+				"name": "Address",
+				"type": "String"
+			},
+			{
+				"name": "Phonr",
+				"type": "String"
+			}
+		]
+	}
+}
