@@ -1,0 +1,23 @@
+{
+	"name": "DataTarget_Airport",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLSG2_adlsdevtestfr",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "airport_info",
+				"fileSystem": "outputfiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
