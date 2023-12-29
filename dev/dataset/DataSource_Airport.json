@@ -1,5 +1,5 @@
 {
-	"name": "DataSource",
+	"name": "DataSource_Airport",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_ADLSG2_adlsdevtestfr",
