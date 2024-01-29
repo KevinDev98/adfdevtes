@@ -1,0 +1,9 @@
+{
+	"name": "adfetldevdata",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d4a7afe9-da85-4abe-9f0a-e9fb452f2903",
+		"tenantId": "489581cf-0f55-408a-9e44-289b6fb55ea0"
+	}
+}
